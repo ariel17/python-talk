@@ -1,0 +1,242 @@
+article#python {
+    text-align: center;
+}
+
+article#python > h1 {
+    display: none;
+}
+
+article#historia {
+    font-size: 0.9em;
+}
+
+article#hecho-con-python {
+    text-align: center;
+}
+
+article#hecho-con-python > h2 {
+    display: none;
+}
+
+article#sintaxis-de-python {
+    text-align: center;
+}
+
+article#herramientas {
+    text-align: center;
+}
+
+article#paquetes {
+    text-align: center;
+}
+
+article#frameworks-web {
+    text-align: center;
+}
+
+article#salt {
+    text-align: center;
+}
+
+article#salt > h2 {
+    display: none;
+}
+
+article#sentry {
+    text-align: center;
+}
+
+article#sentry > h2 {
+    display: none;
+}
+
+article#sphinx {
+    text-align: center;
+}
+
+article#sphinx > h2 {
+    display: none;
+}
+
+article#otros {
+    text-align: center;
+}
+
+article#otros > h2 {
+    text-align: left;
+}
+
+article#django {
+    text-align: center;
+}
+
+article#django > h2 {
+    display: none;
+}
+
+article#muchas-gracias {
+    text-align: center;
+}
+
+article#muchas-gracias > h2 {
+    font-size: 3em;
+}
+
+article#frameworks-web {
+    text-align: center;
+}
+
+article#preguntas {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 2em;
+}
+
+article#muchas-gracias > h2 {
+    margin-top: 120px;
+}
+
+article#flask > h2 {
+    display: none;
+}
+
+article#id8 > div.highlight-bash {
+    font-size: 0.8em;
+}
+
+img.python {
+    width: 100%;
+    display: block;
+    margin-top: 100px;
+}
+
+img.movile {
+    height: 5%;
+    padding-top: 0;
+}
+
+img.evolution {
+    padding-top: 100px;
+}
+
+img.movile-thankyou {
+    height: 10%;
+    padding-top: 10%;
+}
+
+img.guido {
+    float: right;
+}
+
+img.fabric {
+    float: right;
+}
+
+img.scrapy {
+    width: 30%;
+}
+
+img.powered {
+    margin-top: 70px;
+}
+
+img.keep-calm {
+    padding-top: 80px;
+    width: 50%;
+}
+
+img.salt-platform {
+    width: 70%;
+}
+
+img.sentry {
+    width: 40%;
+    padding: 10px;
+}
+
+img.sentry-event {
+    width: 70%;
+}
+
+img.flask {
+    width: 70%;
+    padding: 40px;
+}
+
+img.sphinx-page {
+    padding: 30px;
+}
+
+img.django {
+    width: 60%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+img.django-pony {
+    width: 50%;
+    padding: 10px;
+}
+
+img.preguntas {
+    width: 70%;
+    padding: 40px;
+}
+
+img.herramientas {
+    width: 90%;
+    padding-top: 80px;
+}
+
+img.paquetes {
+    width: 70%;
+    padding-top: 30px;
+}
+
+img.webpy {
+    width: 40%;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.pyramid {
+    width: 40%;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.turbogears {
+    width: 60%;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.usually {
+    padding-top: 30px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p.date {
+    margin-top: 0;
+}
+
+p.personal-data {
+    margin: 0;
+}
+
+p.personal-data > a {
+    text-decoration: none;
+    font-size: 0.7em;
+}
