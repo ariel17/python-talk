@@ -67,3 +67,4 @@ target/
 
 # Sphinx
 _build
+.rope*
