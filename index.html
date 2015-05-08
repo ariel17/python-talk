@@ -138,6 +138,23 @@ programación funcional.</li>
 
 <h2>Sintaxis</h2>
 
+<p>Funciones con parámetros y valores por defecto:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">good_bye</span><span class="p">(</span><span class="n">you</span><span class="p">,</span> <span class="n">insult</span><span class="o">=</span><span class="s">&quot;and don&#39;t come back&quot;</span><span class="p">):</span>  <span class="c"># with defaults</span>
+<span class="gp">... </span>    <span class="k">print</span> <span class="s">&quot;Good bye </span><span class="si">%s</span><span class="s">, </span><span class="si">%s</span><span class="s">!&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">you</span><span class="p">,</span> <span class="n">insult</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">good_bye</span><span class="p">(</span><span class="s">&quot;Ariel&quot;</span><span class="p">)</span>
+<span class="go">Good bye Ariel, and don&#39;t come back!</span>
+</pre></div>
+</div>
+
+
+
+
+</article>
+<article class="slide level-2" id="id2">
+
+<h2>Sintaxis</h2>
+
 <p>Comentarios:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c"># Esto es un comentario en 1 línea</span>
 <span class="sd">&quot;&quot;&quot;</span>
@@ -155,7 +172,7 @@ programación funcional.</li>
 
 
 </article>
-<article class="slide level-2" id="id2">
+<article class="slide level-2" id="id3">
 
 <h2>Sintaxis</h2>
 
@@ -184,7 +201,35 @@ programación funcional.</li>
 
 
 </article>
-<article class="slide level-2" id="id3">
+<article class="slide level-2" id="id4">
+
+<h2>Sintaxis</h2>
+
+<p>Herencia múltiple:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Developer</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">develop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>  <span class="c"># where the magic happens</span>
+
+<span class="k">class</span> <span class="nc">Operation</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">configure_server</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>  <span class="c"># more magic here</span>
+
+<span class="k">class</span> <span class="nc">DevOp</span><span class="p">(</span><span class="n">Developer</span><span class="p">,</span> <span class="n">Operation</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+
+
+<span class="n">devop</span> <span class="o">=</span> <span class="n">new</span> <span class="n">DevOp</span><span class="p">(</span><span class="s">&quot;Gabriel&quot;</span><span class="p">)</span>
+<span class="n">devop</span><span class="o">.</span><span class="n">develop</span><span class="p">()</span>
+<span class="n">devop</span><span class="o">.</span><span class="n">configure_server</span><span class="p">()</span>
+</pre></div>
+</div>
+
+
+
+
+</article>
+<article class="slide level-2" id="id5">
 
 <h2>Sintaxis</h2>
 
@@ -260,7 +305,7 @@ aislados.</p>
 
 
 </article>
-<article class="slide level-2" id="id4">
+<article class="slide level-2" id="id6">
 
 <h2>Virtualenv</h2>
 
@@ -325,7 +370,7 @@ Successfully installed requests-2.6.2
 
 
 </article>
-<article class="slide level-2" id="id5">
+<article class="slide level-2" id="id7">
 
 <h2>requests</h2>
 
@@ -371,7 +416,7 @@ realizan en la consola de comandos, utilizando la biblioteca <em>Fabric</em>.</p
 
 
 </article>
-<article class="slide level-2" id="id6">
+<article class="slide level-2" id="id8">
 
 <h2>Fabric</h2>
 
@@ -399,7 +444,7 @@ realizan en la consola de comandos, utilizando la biblioteca <em>Fabric</em>.</p
 
 
 </article>
-<article class="slide level-2" id="id7">
+<article class="slide level-2" id="id9">
 
 <h2>Fabric</h2>
 
@@ -421,7 +466,7 @@ Done.
 
 
 </article>
-<article class="slide level-2" id="id8">
+<article class="slide level-2" id="id10">
 
 <h2>Fabric</h2>
 
@@ -461,11 +506,12 @@ run<span class="o">()</span> received nonzero <span class="k">return</span> code
 subcomandos.</p>
 </li>
 <li><p class="first"><strong>Scrapy</strong>: un framework para parsear, consumir y navegar páginas HTML.
-Ofrece implementaciones base para crear fácilmente bots que consuman sitios.</p>
+Ofrece implementaciones base para crear fácilmente bots que consuman sitios
+(crawlers).</p>
 <img alt="images/scrapy.png" class="scrapy" src="images/scrapy.png" />
 </li>
-<li><p class="first"><strong>Pilas Engine</strong>: un motor de video juegos argentino. Creado por Hugo
-Ruscitti.</p>
+<li><p class="first"><strong>Pilas Engine</strong>: un motor de video juegos argentino. Creado por el argentino
+Hugo Ruscitti (&#64;hugoruscitti).</p>
 <img alt="images/pilas.png" src="images/pilas.png" />
 </li>
 </ul>
@@ -591,6 +637,7 @@ Ruscitti.</p>
 <li><code class="docutils literal"><span class="pre">#pyar</span></code> en Freenode</li>
 <li>PEP 20 - The Zen of Python: <a class="reference external" href="https://www.python.org/dev/peps/pep-0020/">https://www.python.org/dev/peps/pep-0020/</a></li>
 <li><em>Learn Python the hard way</em>: <a class="reference external" href="http://learnpythonthehardway.org/">http://learnpythonthehardway.org/</a></li>
+<li>Buenos Aires Python Meetup: <a class="reference external" href="http://www.meetup.com/Buenos-Aires-Python-Meetup/">http://www.meetup.com/Buenos-Aires-Python-Meetup/</a></li>
 </ul>
 
 
