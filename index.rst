@@ -86,6 +86,19 @@ Funciones:
 Sintaxis
 ========
 
+Funciones con parámetros y valores por defecto:
+
+.. code-block:: python
+
+   >>> def good_bye(you, insult="and don't come back"):  # with defaults
+   ...     print "Good bye %s, %s!" % (you, insult)
+   ...
+   >>> good_bye("Ariel")
+   Good bye Ariel, and don't come back!
+
+Sintaxis
+========
+
 Comentarios:
 
 .. code-block:: python
@@ -124,6 +137,30 @@ Declaración de clases:
           Imprime el estado.
           """
           print "La parrilla está %s" % self._estado
+
+Sintaxis
+========
+
+Herencia múltiple:
+
+.. code-block:: python
+
+   class Developer:
+       def develop(self):
+           pass  # where the magic happens
+
+   class Operation:
+       def configure_server(self):
+           pass  # more magic here
+
+   class DevOp(Developer, Operation):
+       def __init__(self, name):
+           self._name = name
+
+  
+   devop = new DevOp("Gabriel")
+   devop.develop()
+   devop.configure_server()
 
 Sintaxis
 ========
@@ -298,14 +335,15 @@ Otros paquetes útiles
   subcomandos. 
 
 * **Scrapy**: un framework para parsear, consumir y navegar páginas HTML.
-  Ofrece implementaciones base para crear fácilmente bots que consuman sitios.
+  Ofrece implementaciones base para crear fácilmente bots que consuman sitios
+  (crawlers).
 
   .. rst-class:: scrapy
 
      .. image:: _static/scrapy.png
 
-* **Pilas Engine**: un motor de video juegos argentino. Creado por Hugo
-  Ruscitti.
+* **Pilas Engine**: un motor de video juegos argentino. Creado por el argentino
+  Hugo Ruscitti (@hugoruscitti).
 
   .. image:: _static/pilas.png
 
@@ -406,6 +444,7 @@ Dónde continuar
 * ``#pyar`` en Freenode
 * PEP 20 - The Zen of Python: https://www.python.org/dev/peps/pep-0020/
 * *Learn Python the hard way*: http://learnpythonthehardway.org/
+* Buenos Aires Python Meetup: http://www.meetup.com/Buenos-Aires-Python-Meetup/
 
 ¡Muchas gracias!
 ================
